@@ -1,0 +1,32 @@
+.searchbar-container {
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(70, 96, 187, 0.2) 0px 16px 30px -10px;
+
+  border-radius: 1em;
+
+  width: 100%;
+  padding: 0.8em;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.searchbar-innercontainer {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+}
+
+.searchbar-container .searchbar-input {
+  margin-left: 1rem;
+  width: 100%;
+}
+
+.searchbar-container button {
+    background-color: rgb(96, 171, 255);
+    border-radius: 0.8em;
+
+    padding: 1em;
+}
