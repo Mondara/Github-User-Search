@@ -1,6 +1,8 @@
-import { useRef, useState } from 'react'
+import { useState } from 'react'
 import Navbar from './Navbar/Navbar';
 import SearchBar from './Searchbar/Searchbar';
+import Userprofile from './Userprofile/Userprofile';
+
 import { getUser } from '../util/fetch';
 import './App.css'
 
@@ -22,6 +24,7 @@ function App() {
     <div className="app">
       <Navbar />
       <SearchBar username={username} setUsername={setUsername} handleSearch={handleSearch}/>
+      <Userprofile user={userInfo} />
     </div>
   )
 }

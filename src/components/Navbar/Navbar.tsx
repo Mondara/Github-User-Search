@@ -6,7 +6,7 @@ export default function Navbar() {
         <div className="navbar">
             <h1 className="navbar-header">devfinder</h1>
             <button className="navbar-button">
-                <img src="../../../public/assets/icon-moon.svg"/>
+                <img src="/src/assets/icon-moon.svg"/>
                 <p>Dark</p>
             </button>
         </div>

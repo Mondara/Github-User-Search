@@ -4,7 +4,7 @@ import User from '../interfaces/interfaces';
 const URL_BASE = "https://api.github.com/users/";
 
 export const getUser = (username: string) => {
-    const [data, setData] = useState<User>();
+    const [data, setData] = useState<User>({});
 
     useEffect(() => {
         fetch(`${URL_BASE}${username}`)

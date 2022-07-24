@@ -13,7 +13,7 @@ export default function Searchbar({ username, setUsername, handleSearch }: Props
     return (
         <form onSubmit={handleSearch} className="searchbar-container">
             <div className="searchbar-innercontainer">
-                <img src='../../../public/assets/icon-search.svg' className="searchbar-icon" />
+                <img src='/src/assets/icon-search.svg' className="searchbar-icon" />
                 <input
                     className="searchbar-input"
                     placeholder="Search Github Username..."
