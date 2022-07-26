@@ -10,7 +10,7 @@ function App() {
   const [username, setUsername] = useState("");
   const [user, setUser] = useState("");
 
-  const userInfo = getUser(user || "Mondara");
+  const userInfo = getUser(user || "Microsoft");
   
   const handleSearch = (e) => {
     e.preventDefault();
