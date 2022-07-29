@@ -2,6 +2,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
+  color: inherit;
 }
 
 :root {
@@ -16,13 +18,20 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-}
+  /* Style Variable */
+  --ff-lg: 1.6em;
+  --ff-md: 0.8em;
+  --ff-sm: 0.6em;
 
-#root {
-  height: 100vh;
-  width: 100%;
+  /* Light Mode */
+  --light-bg-primary: rgb(246, 248, 255);
+  --light-bg-secondary: rgb(255, 255, 255);
 
-  background-color: rgb(246, 248, 255);
+  --light-text-primary: rgb(0, 0, 0);
+  --light-text-secondary: rgb(75, 106, 155);
+  --light-text-na: rgba(75, 106, 155, 0.5);
+
+  --btn-bg: rgb(0, 121, 255);
 }
 
 /* Remove list styles (bullets/numbers) */
@@ -54,6 +63,10 @@ button {
   background: none;
   border: none;
   color: inherit;
+}
+
+button:hover, a:hover {
+  opacity: 0.6;
 }
 
 /* Input Reset */

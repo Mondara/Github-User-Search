@@ -1,6 +1,12 @@
 import React from 'react';
 import './Userprofile.css';
 
+import { ReactComponent as LocationSVG } from '../../assets/icon-location.svg';
+import { ReactComponent as CompanySVG } from '../../assets/icon-company.svg';
+import { ReactComponent as TwitterSVG } from '../../assets/icon-twitter.svg';
+import { ReactComponent as WebsiteSVG } from '../../assets/icon-website.svg';
+
+
 import User from '../../interfaces/interfaces';
 
 interface UserProfile {
@@ -38,20 +44,20 @@ export default function Userprofile({ user }: UserProfile) {
                 </div>
             </div>
             <div className="userinfo-links">
-                <div className="userinfo-links-container location">
-                    <img className="logo" src="/src/assets/icon-location.svg" alt="Location Pin Icon" />
+                <div className="userinfo-links-container  location">
+                    <LocationSVG className="userinfo-links-icon"/>
                     <p className="userinfo-link">{user.location}</p>
                 </div>
                 <div className="userinfo-links-container twitter">
-                    <img className="logo" src="/src/assets/icon-twitter.svg" alt="Twitter Icon" />
+                    <TwitterSVG />
                     <a className="userinfo-link" href={`https://twitter.com/${user.twitter_username}`} >{user.twitter_username}</a>
                 </div>
                 <div className="userinfo-links-container website">
-                    <img className="logo" src="/src/assets/icon-website.svg" alt="Chain Icon" />
+                    <WebsiteSVG />
                     <p className="userinfo-link">{user.blog}</p>
                 </div>
                 <div className="userinfo-links-container company">
-                    <img className="logo" src="/src/assets/icon-company.svg" alt="Building Icon" />
+                    <CompanySVG />
                     <a className="userinfo-link" href={`https://github.com/${user.company?.replace('@', '')}`}>{user.company}</a>
                 </div>
             </div>

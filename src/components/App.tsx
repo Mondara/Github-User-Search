@@ -1,7 +1,8 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 import Navbar from './Navbar/Navbar';
 import SearchBar from './Searchbar/Searchbar';
 import Userprofile from './Userprofile/Userprofile';
+import ThemeProvider from '../theme/ThemeProvider';
 
 import { getUser } from '../util/fetch';
 import './App.css'
@@ -11,7 +12,7 @@ function App() {
   const [user, setUser] = useState("");
 
   const userInfo = getUser(user || "Microsoft");
-  
+
   const handleSearch = (e) => {
     e.preventDefault();
 
@@ -21,11 +22,13 @@ function App() {
   }
 
   return (
-    <div className="app">
-      <Navbar />
-      <SearchBar username={username} setUsername={setUsername} handleSearch={handleSearch}/>
-      <Userprofile user={userInfo} />
-    </div>
+    <ThemeProvider>
+      <div className="app">
+        <Navbar />
+        <SearchBar username={username} setUsername={setUsername} handleSearch={handleSearch} />
+        <Userprofile user={userInfo} />
+      </div>
+    </ThemeProvider>
   )
 }
 

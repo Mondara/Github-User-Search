@@ -1,10 +1,11 @@
 .userinfo-container {
-  background-color: rgb(255, 255, 255);
   box-shadow: rgba(70, 96, 187, 0.2) 0px 16px 30px -10px;
   border-radius: 1em;
 
   width: 100%;
-  padding: 1.2em;
+  padding: 1em;
+  padding-right: 2em;
+
 
   display: grid;
   gap: 2em 1em;
@@ -24,15 +25,8 @@
 }
 
 .userinfo-avatar img {
-    width: 10em;
-    height: 10em;
-  
-    max-width: 120px;
-    max-height: 120px;
-  
-    border-radius: 100rem;
-    border: 10px solid rgb(255, 255, 255);
-  }
+  border-radius: 100rem;
+}
 
 /* --- Profile - Name, Date, Login, bio --- */
 .userinfo-profile {
@@ -49,20 +43,29 @@
 
 .userinfo-profile .userinfo-name {
   grid-area: Heading;
+
+  font-size: var(--ff-lg);
 }
 
 .userinfo-profile .userinfo-date {
   grid-area: Date;
   justify-self: flex-end;
+
+  font-size: var(--ff-md);
 }
 
 .userinfo-profile .userinfo-login {
   grid-area: Login;
   align-self: flex-start;
+
+  font-weight: 700;
+  font-size: var(--ff-md);
 }
 
 .userinfo-profile .userinfo-bio {
   grid-area: Bio;
+
+  font-size: var(--ff-md);
 }
 
 /* --- Stats = Repos, Followers, Following --- */
@@ -72,14 +75,17 @@
   display: flex;
   justify-content: space-between;
 
-  padding: 1em 2.4em;
+  padding: 2em 2.8em;
 
-  background-color: rgb(246, 248, 255);
   border-radius: 1em;
+
+  font-size: var(--ff-md);
 }
 
 .userinfo-stat {
   padding-top: 1em;
+  
+  font-size: var(--ff-lg);
 }
 
 /* --- Links = Location, Blog, Github, Website --- */
@@ -88,29 +94,33 @@
 
   display: grid;
   grid-template-columns: auto auto;
-  grid-template-areas: 
-        "location twitter"
-        "website company";
+  grid-template-areas:
+    "location twitter"
+    "website company";
+
+  font-size: var(--ff-md);
 }
 
 .userinfo-links .location {
-    grid-area: location;
+  grid-area: location;
 }
 
 .userinfo-links .twitter {
-    grid-area: twitter;
+  grid-area: twitter;
 }
 
 .userinfo-links .website {
-    grid-area: website;
+  grid-area: website;
 }
 
 .userinfo-links .company {
-    grid-area: company;
+  grid-area: company;
 }
 
 .userinfo-links .userinfo-links-container {
-    display: flex;
-    padding: 1em;
-    gap: 0.5em;
+  display: flex;
+  align-items: center;
+
+  padding: 1em;
+  gap: 0.5em;
 }

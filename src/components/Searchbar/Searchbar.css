@@ -1,7 +1,5 @@
 .searchbar-container {
-  background-color: rgb(255, 255, 255);
-  box-shadow: rgba(70, 96, 187, 0.2) 0px 16px 30px -10px;
-
+  box-shadow: rgba(70, 96, 187, 0.2) 0px 16px 30px -10px;  
   border-radius: 1em;
 
   width: 100%;
@@ -11,7 +9,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
 
 }
 
@@ -25,11 +22,16 @@
 .searchbar-container .searchbar-input {
   margin-left: 1rem;
   width: 100%;
+
 }
 
 .searchbar-btn {
-    background-color: rgb(96, 171, 255);
     border-radius: 0.8em;
+    color: white;
 
     padding: 1em;
+
+    cursor: pointer;
 }
+
+

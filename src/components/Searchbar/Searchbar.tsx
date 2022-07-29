@@ -8,7 +8,6 @@ interface Props {
 }
 
 export default function Searchbar({ username, setUsername, handleSearch }: Props) {
-    
 
     return (
         <form onSubmit={handleSearch} className="searchbar-container">
@@ -22,7 +21,7 @@ export default function Searchbar({ username, setUsername, handleSearch }: Props
                     onChange={(e) => setUsername(e.target.value)}
                 />
             </div>
-            <input className="searchbar-btn" type="submit" value="Search"/>
+            <button className="searchbar-btn" type="submit" >Search</button>
         </form>
     )
 }

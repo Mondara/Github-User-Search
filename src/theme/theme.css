@@ -1,0 +1,124 @@
+.main {
+  height: 100vh;
+  width: 100%;
+}
+
+.theme--dark {
+  /* Light Mode Variables*/
+  --dark-bg-primary: rgb(20, 29, 47);
+  --dark-bg-secondary: rgb(30, 42, 71);
+
+  --dark-text-primary: rgb(255, 255, 255);
+  --dark-text-secondary: rgb(255, 255, 255);
+  --dark-text-na: rgba(255, 255, 255, 0.5);
+
+  --btn-bg: rgb(0, 121, 255);
+  /* -------------- */
+
+  background-color: var(--dark-bg-primary);
+}
+
+.theme--light {
+  /* Light Mode Variables*/
+  --light-bg-primary: rgb(246, 248, 255);
+  --light-bg-secondary: rgb(255, 255, 255);
+
+  --light-text-primary: rgb(75, 106, 155);
+  --light-text-secondary: rgb(0, 0, 0);
+  --light-text-na: rgba(75, 106, 155, 0.5);
+
+  --btn-bg: rgb(0, 121, 255);
+  /* -------------- */
+
+  background-color: var(--light-bg-primary);
+}
+
+/* ---  Light Mode --- */
+
+/* -- Profile --*/
+.theme--light .userinfo-container {
+  color: var(--light-text-primary);
+  background-color: var(--light-bg-secondary);
+}
+
+.theme--light .userinfo-name {
+  color: var(--light-text-secondary);
+}
+
+.theme--light .userinfo-stats {
+  background-color: var(--light-bg-primary);
+}
+
+.theme--light .userinfo-stat {
+  color: var(--light-text-secondary);
+}
+
+/* -- Search --*/
+.theme--light .searchbar-container {
+  background-color: var(--light-bg-secondary);
+}
+
+.theme--light .searchbar-input {
+  color: var(--light-text-primary);
+}
+
+/* -- Navbar --*/
+.theme--light .navbar {
+    color: var(--light-text-primary);
+}
+
+/* -- Links --*/
+.theme--light .userinfo-links {
+    fill: var(--light-text-primary);
+}
+
+/* ================================= */ 
+/* ---  Dark Mode --- */
+
+/* -- Profile --*/
+.theme--dark .userinfo-container {
+  color: var(--dark-text-primary);
+  background-color: var(--dark-bg-secondary);
+}
+
+.theme--dark .userinfo-name {
+  color: var(--dark-text-secondary);
+}
+
+.theme--dark .userinfo-stats {
+  background-color: var(--dark-bg-primary);
+}
+
+.theme--dark .userinfo-stat {
+  color: var(--dark-text-secondary);
+}
+
+/* -- Search --*/
+.theme--dark .searchbar-container {
+  background-color: var(--dark-bg-secondary);
+}
+
+.theme--dark .searchbar-input {
+  color: var(--dark-text-primary);
+}
+
+/* -- Navbar --*/
+.theme--dark .navbar {
+    color: var(--dark-text-primary);
+}
+
+/* -- Links --*/
+.theme--dark .userinfo-links {
+    fill: var(--dark-text-primary);
+}
+
+
+
+
+.userinfo-login {
+  color: var(--btn-bg);
+}
+
+.searchbar-btn {
+  background-color: var(--btn-bg);
+}
