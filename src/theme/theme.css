@@ -3,16 +3,25 @@
   width: 100%;
 }
 
+/* Global Variables */
+.main {
+  /* Font Variables */
+  --ff-lg: 1.6em;
+  --ff-md: 0.8em;
+  --ff-sm: 0.6em;
+
+  --btn-bg: rgb(0, 121, 255);
+
+}
+
 .theme--dark {
-  /* Light Mode Variables*/
+  /* Dark Mode Variables*/
   --dark-bg-primary: rgb(20, 29, 47);
   --dark-bg-secondary: rgb(30, 42, 71);
 
   --dark-text-primary: rgb(255, 255, 255);
   --dark-text-secondary: rgb(255, 255, 255);
   --dark-text-na: rgba(255, 255, 255, 0.5);
-
-  --btn-bg: rgb(0, 121, 255);
   /* -------------- */
 
   background-color: var(--dark-bg-primary);
@@ -26,15 +35,13 @@
   --light-text-primary: rgb(75, 106, 155);
   --light-text-secondary: rgb(0, 0, 0);
   --light-text-na: rgba(75, 106, 155, 0.5);
-
-  --btn-bg: rgb(0, 121, 255);
   /* -------------- */
 
   background-color: var(--light-bg-primary);
 }
+/* ================================= */
 
 /* ---  Light Mode --- */
-
 /* -- Profile --*/
 .theme--light .userinfo-container {
   color: var(--light-text-primary);
@@ -64,17 +71,16 @@
 
 /* -- Navbar --*/
 .theme--light .navbar {
-    color: var(--light-text-primary);
+  color: var(--light-text-primary);
 }
 
 /* -- Links --*/
 .theme--light .userinfo-links {
-    fill: var(--light-text-primary);
+  fill: var(--light-text-primary);
 }
+/* ================================= */
 
-/* ================================= */ 
 /* ---  Dark Mode --- */
-
 /* -- Profile --*/
 .theme--dark .userinfo-container {
   color: var(--dark-text-primary);
@@ -102,18 +108,17 @@
   color: var(--dark-text-primary);
 }
 
+
 /* -- Navbar --*/
 .theme--dark .navbar {
-    color: var(--dark-text-primary);
+  color: var(--dark-text-primary);
 }
 
 /* -- Links --*/
 .theme--dark .userinfo-links {
-    fill: var(--dark-text-primary);
+  fill: var(--dark-text-primary);
 }
-
-
-
+/* ================================= */
 
 .userinfo-login {
   color: var(--btn-bg);

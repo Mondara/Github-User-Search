@@ -1,12 +1,24 @@
 .app {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    height: 100%;
-    width: 50vw;
-    max-width: 730px;
+  height: 100%;
+  /* width: 50vw; */
+  max-width: 760px;
 
-    margin: 0 auto;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .app {
+    max-width: 80vw;
+  }
+}
+
+@media (max-width: 570px) {
+  .app {
+    max-width: 90vw;
+  }
 }

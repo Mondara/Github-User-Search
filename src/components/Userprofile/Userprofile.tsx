@@ -18,11 +18,12 @@ export default function Userprofile({ user }: UserProfile) {
     return (
         <div className="userinfo-container">
 
-            <div className="userinfo-avatar">
-                <img src={user.avatar_url} alt="User Avatar" />
-            </div>
+            {/* <div className="userinfo-avatar">
+
+            </div> */}
 
             <div className="userinfo-profile">
+                <img className="userinfo-avatar" src={user.avatar_url} alt="User Avatar" />
                 <h1 className="userinfo-name">{user.name}</h1>
                 <p className="userinfo-date">Joined 26 Jan 2011</p>
                 <p className="userinfo-login">{`@${user.login}`}</p>
@@ -45,12 +46,12 @@ export default function Userprofile({ user }: UserProfile) {
             </div>
             <div className="userinfo-links">
                 <div className="userinfo-links-container  location">
-                    <LocationSVG className="userinfo-links-icon"/>
+                    <LocationSVG className="userinfo-links-icon" />
                     <p className="userinfo-link">{user.location}</p>
                 </div>
                 <div className="userinfo-links-container twitter">
                     <TwitterSVG />
-                    <a className="userinfo-link" href={`https://twitter.com/${user.twitter_username}`} >{user.twitter_username}</a>
+                    <a className="userinfo-link" target="_blank" href={`https://twitter.com/${user.twitter_username}`} >{user.twitter_username}</a>
                 </div>
                 <div className="userinfo-links-container website">
                     <WebsiteSVG />
@@ -58,7 +59,7 @@ export default function Userprofile({ user }: UserProfile) {
                 </div>
                 <div className="userinfo-links-container company">
                     <CompanySVG />
-                    <a className="userinfo-link" href={`https://github.com/${user.company?.replace('@', '')}`}>{user.company}</a>
+                    <a className="userinfo-link" target="_blank" href={`https://github.com/${user.company?.replace('@', '')}`}>{user.company}</a>
                 </div>
             </div>
         </div>
