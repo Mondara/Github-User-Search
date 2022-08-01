@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import React from 'react';
+import { ReactComponent as SearchSVG } from '../../assets/icon-search.svg';
 import './Searchbar.css';
 
 interface Props {
@@ -16,7 +17,7 @@ export function Searchbar({ username, setUsername, handleSearch, error }: Props)
     return (
         <form onSubmit={handleSearch} className={`searchbar-container ${error.status && error.statusText}`}>
             <div className="searchbar-innercontainer">
-                <img src='/src/assets/icon-search.svg' className="searchbar-icon" />
+                <SearchSVG />
                 <input
                     className="searchbar-input"
                     placeholder="Search Github Username..."
