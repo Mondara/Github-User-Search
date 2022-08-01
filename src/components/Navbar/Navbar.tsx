@@ -7,7 +7,7 @@ import { ReactComponent as SunSVG } from '../../assets/icon-sun.svg';
 import { ThemeContext } from '../../theme/ThemeContext';
 
 
-export default function Navbar() {
+export function Navbar() {
     const { theme, toggleTheme} = React.useContext(ThemeContext);
 
     return (

@@ -25,6 +25,15 @@
 
 }
 
+.searchbar-error {
+  padding-right: 0.8em;
+  color: red;
+}
+
+.searchbar-container.error {
+  outline: 1px solid red;
+}
+
 .searchbar-btn {
     border-radius: 0.8em;
     color: white;

@@ -13,21 +13,17 @@ interface UserProfile {
     user: User;
 }
 
-export default function Userprofile({ user }: UserProfile) {
-    console.log(user);
+export function Userprofile({ user }: UserProfile) {
+    console.log(user)
     return (
         <div className="userinfo-container">
 
-            {/* <div className="userinfo-avatar">
-
-            </div> */}
-
             <div className="userinfo-profile">
                 <img className="userinfo-avatar" src={user.avatar_url} alt="User Avatar" />
-                <h1 className="userinfo-name">{user.name}</h1>
-                <p className="userinfo-date">Joined 26 Jan 2011</p>
+                <h1 className="userinfo-name">{user.name || user.login}</h1>
+                <p className="userinfo-date">{`Joined ${user.created_at}` }</p>
                 <p className="userinfo-login">{`@${user.login}`}</p>
-                <p className="userinfo-bio">{user.bio}</p>
+                <p className="userinfo-bio">{user.bio || "This profile has no bio."}</p>
             </div>
 
             <div className="userinfo-stats">
@@ -47,19 +43,30 @@ export default function Userprofile({ user }: UserProfile) {
             <div className="userinfo-links">
                 <div className="userinfo-links-container  location">
                     <LocationSVG className="userinfo-links-icon" />
-                    <p className="userinfo-link">{user.location}</p>
+                    <p className="userinfo-link">{user.location || "Not Available"}</p>
                 </div>
                 <div className="userinfo-links-container twitter">
                     <TwitterSVG />
-                    <a className="userinfo-link" target="_blank" href={`https://twitter.com/${user.twitter_username}`} >{user.twitter_username}</a>
+                    {user.twitter_username ?
+                        <a className="userinfo-link" target="_blank" href={`https://twitter.com/${user.twitter_username}`} >{user.twitter_username}</a>
+                        :
+                        <p className="userinfo-link">Not Available</p>
+                    }
                 </div>
                 <div className="userinfo-links-container website">
                     <WebsiteSVG />
-                    <p className="userinfo-link">{user.blog}</p>
+                    {user.blog ?
+                        <a className="userinfo-link" href={user.blog}>Website</a> :
+                        <p className="userinfo-link"> Not Available</p>
+                    }
                 </div>
                 <div className="userinfo-links-container company">
                     <CompanySVG />
-                    <a className="userinfo-link" target="_blank" href={`https://github.com/${user.company?.replace('@', '')}`}>{user.company}</a>
+                    {user.company ?
+                        <a className="userinfo-link" target="_blank" href={`https://github.com/${user.company?.replace('@', '')}`}>{user.company}</a>
+                        :
+                        <p className="userinfo-link">Not Available</p>
+                    }
                 </div>
             </div>
         </div>
