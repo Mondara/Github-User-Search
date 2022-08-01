@@ -1,5 +1,5 @@
 import React from 'react';
-import './navbar.css';
+import './Navbar.css';
 
 import { ReactComponent as MoonSVG } from '../../assets/icon-moon.svg';
 import { ReactComponent as SunSVG } from '../../assets/icon-sun.svg';
