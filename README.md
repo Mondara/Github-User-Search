@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Live Site URL: [Live Site](https://github-user-search-mt.netlify.app/)
-- Solution URL: [Solution URL](https://your-solution-url.comhttps://www.frontendmentor.io/challenges/github-user-search-app-Q09YOgaH6/hub)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/challenges/github-user-search-app-Q09YOgaH6/hub)
 
 ## My process
 
